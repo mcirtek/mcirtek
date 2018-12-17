@@ -5,6 +5,7 @@
 /* yeni github */
 /* içerden */
 
+/* code içinden */
 
 using System;
 using System.Collections.Generic;
