@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5667BBDD-ADB3-4D2D-8B16-A6346E6CCFD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gtp.Global.ICM.Ui</RootNamespace>
+    <AssemblyName>Gtp.Global.ICM.Ui</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Gtp.Brokerage.Ui.Common, Version=3.0.2.40, Culture=neutral, PublicKeyToken=bac8df102a3fd63d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gtp.Brokerage.Ui.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Gtp.Framework.Common.Bo, Version=3.0.0.70, Culture=neutral, PublicKeyToken=bac8df102a3fd63d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gtp.Framework.Common.Bo.dll</HintPath>
+    </Reference>
+    <Reference Include="Gtp.Framework.ControlLibrary.Ui, Version=3.0.0.70, Culture=neutral, PublicKeyToken=bac8df102a3fd63d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gtp.Framework.ControlLibrary.Ui.dll</HintPath>
+    </Reference>
+    <Reference Include="Gtp.Framework.GtpDataSet, Version=3.0.0.70, Culture=neutral, PublicKeyToken=bac8df102a3fd63d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gtp.Framework.GtpDataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Gtp.Framework.GtpXml, Version=3.0.0.70, Culture=neutral, PublicKeyToken=bac8df102a3fd63d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gtp.Framework.GtpXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Gtp.Framework.Interfaces.Bo, Version=3.0.0.70, Culture=neutral, PublicKeyToken=bac8df102a3fd63d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gtp.Framework.Interfaces.Bo.dll</HintPath>
+    </Reference>
+    <Reference Include="Gtp.Framework.Interfaces.Ui, Version=3.0.0.70, Culture=neutral, PublicKeyToken=bac8df102a3fd63d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gtp.Framework.Interfaces.Ui.dll</HintPath>
+    </Reference>
+    <Reference Include="Gtp.Framework.Invoker, Version=3.0.0.70, Culture=neutral, PublicKeyToken=bac8df102a3fd63d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Gtp.Framework.Invoker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlgoOrder.cs" />
+    <Compile Include="AlgoOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlgoOrderDetail.Designer.cs">
+      <DependentUpon>AlgoOrderDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlgoOrderList.cs" />
+    <Compile Include="AlgoritmicTrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlgoritmicTrade.Designer.cs">
+      <DependentUpon>AlgoritmicTrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlSat.Designer.cs">
+      <DependentUpon>AlSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlSatTeyit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlSatTeyit.Designer.cs">
+      <DependentUpon>AlSatTeyit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasketOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasketOrders.Designer.cs">
+      <DependentUpon>BasketOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmirAzaltma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmirAzaltma.Designer.cs">
+      <DependentUpon>EmirAzaltma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderManagement.Designer.cs">
+      <DependentUpon>OrderManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderList.cs" />
+    <Compile Include="OrderOperations.cs" />
+    <Compile Include="TopluIyilestirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopluIyilestirme.Designer.cs">
+      <DependentUpon>TopluIyilestirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TopMostMessageBox.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlgoOrderDetail.resx">
+      <DependentUpon>AlgoOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlgoritmicTrade.resx">
+      <DependentUpon>AlgoritmicTrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlSat.resx">
+      <DependentUpon>AlSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlSatTeyit.resx">
+      <DependentUpon>AlSatTeyit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasketOrders.resx">
+      <DependentUpon>BasketOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmirAzaltma.resx">
+      <DependentUpon>EmirAzaltma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderManagement.resx">
+      <DependentUpon>OrderManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TopluIyilestirme.resx">
+      <DependentUpon>TopluIyilestirme.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow1d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>COPY /Y "$(TargetPath)" C:\Users\ist_mahmutc\Documents\GTP\Brokerage</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
