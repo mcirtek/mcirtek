@@ -3,6 +3,8 @@
 
 
 /* yeni github */
+/* içerden */
+
 
 using System;
 using System.Collections.Generic;
