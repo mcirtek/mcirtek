@@ -1,5 +1,4 @@
-﻿/* merhaba test  xx */
-﻿/* merhaba test  yy , new edited */
+﻿/* code in github.com */
 
 using System;
 using System.Collections.Generic;
@@ -481,4 +480,4 @@ namespace Gtp.Global.ICM.Ui
 }
 
 
-/* deneme amaçlı 1 */
+﻿/* code in github.com */
