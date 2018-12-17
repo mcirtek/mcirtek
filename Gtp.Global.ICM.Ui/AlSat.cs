@@ -1,4 +1,4 @@
-﻿/* merhaba test  xx - github içindengüncellendi*/
+﻿/* merhaba test  xx */
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -477,3 +477,6 @@ namespace Gtp.Global.ICM.Ui
 
     }
 }
+
+
+/* deneme amaçlı 1 */
