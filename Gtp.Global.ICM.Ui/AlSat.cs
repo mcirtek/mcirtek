@@ -1,4 +1,5 @@
 ﻿/* code in github.com */
+/* dışardan */
 
 using System;
 using System.Collections.Generic;
