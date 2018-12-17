@@ -1,12 +1,4 @@
-﻿/* code in github.com */
-/* dışardan */
-
-
-/* yeni github */
-/* içerden */
-
-/* code içinden */
-
+/* code insight */
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
